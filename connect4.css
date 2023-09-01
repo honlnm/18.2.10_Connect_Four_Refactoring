@@ -1,12 +1,50 @@
-/* game board table */
-
-#board td {
-  width: 50px;
-  height: 50px;
-  border: solid 1px #666;
+@font-face {
+  font-family: "HiddenShadow";
+  src:
+    url(HiddenCocktailsRegularShadow-8Mjdz.ttf) format(TrueType);
 }
 
-/* pieces are div within game table cells: draw as colored circles */
+#header-container {
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  color: red;
+  font-weight: bold;
+  font-family: "HiddenShadow", serif;
+}
+
+#word {
+  font-size: 50px;
+}
+
+#num {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #666;
+}
+
+table {
+  background-color: yellow;
+  border: solid 2px #666;
+  margin: auto;
+}
+
+#column-top tr {
+  background-color: white;
+}
+
+table td {
+  width: 50px;
+  height: 50px;
+  border: solid 2px #666;
+  border-radius: 50%;
+  background-color: white;
+}
 
 .piece {
   margin: 5px;
@@ -17,10 +55,12 @@
 
 .piece.p1 {
   background-color: red;
+  border-color: darkred;
 }
 
 .piece.p2 {
   background-color: blue;
+  border-color: darkblue;
 }
 
 /* column-top is table row of clickable areas for each column */
