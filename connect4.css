@@ -6,6 +6,7 @@
 
 #header-container {
   text-align: center;
+  margin-bottom: 2%;
 }
 
 h1 {
@@ -30,7 +31,6 @@ h2 {
 
 table {
   background-color: yellow;
-  border: solid 2px #666;
   margin: auto;
 }
 
@@ -71,4 +71,8 @@ table td {
 
 #column-top td:hover {
   background-color: gold;
+}
+
+button {
+  font-size: 150%;
 }
